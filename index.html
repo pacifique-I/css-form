@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputs">
+        <label for="name" class="label">Username</label>
+        <input type="text" name="" value="">
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    let label = document.querySelector('.label');
+    let input = document.querySelector('input');
+    input.addEventListener('focus',()=>{
+      label.style.top = '0';
+      label.style.color  = '#00000070';
+      input.style.border = '2px solid #09f';
+      input.style.borderRadius = '5px';
+    })
+  </script>
+</html>
